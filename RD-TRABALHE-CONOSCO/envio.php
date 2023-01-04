@@ -18,12 +18,12 @@ if (isset($_POST['action'])) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'renwise2.0@gmail.com';
-        $mail->Password = 'xgzwrflpwqdlknfs';
+        $mail->Username = 'email da empresa';
+        $mail->Password = 'senha do email da empresa';
         $mail->SMTPSecure = "ssl";
         $mail->Port = 465;
-        $mail->setFrom('renwise2.0@gmail.com');
-        $mail->addAddress('renwise2.0@gmail.com');
+        $mail->setFrom('email da empresa');
+        $mail->addAddress('email da empresa');
         $mail->addAttachment('upload/curriculo.pdf', 'curriculo.pdf');
         $mail->isHTML(true);
         $mail->Subject = 'Curriculo para vaga';
